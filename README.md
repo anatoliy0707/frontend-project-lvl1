@@ -7,3 +7,8 @@
 
 
 [![Linter check](https://github.com/anatoliy0707/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/anatoliy0707/frontend-project-lvl1/workflows/hexlet-check/badge.svg)
+
+
+
+## Watch asciinemas
+[![asciicast](https://asciinema.org/a/8FLza4pcM0UVHSRyN1AOp04nt.svg)](https://asciinema.org/a/8FLza4pcM0UVHSRyN1AOp04nt)
