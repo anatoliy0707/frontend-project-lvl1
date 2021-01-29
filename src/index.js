@@ -5,8 +5,9 @@ const gameLogic = (task, questionAndAnswer) => {
   const userName = greetingUser();
 
   console.log(task);
-  const [question, rightAnswer] = questionAndAnswer();
+
   for (let i = 1; i <= 3; i += 1) {
+    const [question, rightAnswer] = questionAndAnswer();
     console.log(`Question: ${question}`);
 
     const userAnswer = readlineSync.question("Your answer: ");
@@ -14,6 +15,7 @@ const gameLogic = (task, questionAndAnswer) => {
     if (userAnswer === rightAnswer) {
       console.log("Correct!");
       if (i === 3) {
+        const [question, rightAnswer] = questionAndAnswer();
         console.log(`Congratulations, ${userName}!`);
       }
     } else {

@@ -1,11 +1,11 @@
-import getRandomInRange from "../random-mechanism.js";
-import gameLogic from "../index.js";
+import getRandomInRange from '../random-mechanism.js';
+import gameLogic from '../index.js';
 
 const parityCheck = (num) => {
   if (num % 2 === 0) {
-    return "yes";
+    return 'yes';
   }
-  return "no";
+  return 'no';
 };
 
 const evenGameData = () => {
