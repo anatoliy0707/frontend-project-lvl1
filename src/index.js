@@ -15,7 +15,6 @@ const gameLogic = (task, questionAndAnswer) => {
     if (userAnswer === rightAnswer) {
       console.log("Correct!");
       if (i === 3) {
-        const [question, rightAnswer] = questionAndAnswer();
         console.log(`Congratulations, ${userName}!`);
       }
     } else {

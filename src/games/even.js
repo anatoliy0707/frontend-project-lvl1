@@ -1,11 +1,11 @@
-import getRandomInRange from '../random-mechanism.js';
-import gameLogic from '../index.js';
+import getRandomInRange from "../random-mechanism.js";
+import gameLogic from "../index.js";
 
 const parityCheck = (num) => {
   if (num % 2 === 0) {
-    return 'yes';
+    return "yes";
   }
-  return 'no';
+  return "no";
 };
 
 const evenGameData = () => {
@@ -17,6 +17,6 @@ const evenGameData = () => {
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const buildAndRun = () => gameLogic(task, evenGameData);
+const buildAndRunEven = () => gameLogic(task, evenGameData);
 
-export default buildAndRun;
+export default buildAndRunEven;
