@@ -1,5 +1,5 @@
-import readlineSync from "readline-sync";
-import greetingUser from "./cli.js";
+import readlineSync from 'readline-sync';
+import greetingUser from './cli.js';
 
 const gameLogic = (task, questionAndAnswer) => {
   const userName = greetingUser();
@@ -10,16 +10,16 @@ const gameLogic = (task, questionAndAnswer) => {
     const [question, rightAnswer] = questionAndAnswer();
     console.log(`Question: ${question}`);
 
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === rightAnswer) {
-      console.log("Correct!");
+      console.log('Correct!');
       if (i === 3) {
         console.log(`Congratulations, ${userName}!`);
       }
     } else {
       console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`,
       );
       console.log(`Let's try again, ${userName}!`);
       break;
