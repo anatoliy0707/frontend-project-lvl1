@@ -10,7 +10,6 @@ const calcGameData = () => {
   const operator = getRandomOperator();
   const question = `${num1} ${operator} ${num2}`;
   const rightAnswer = String(eval(question));
-  console.log(rightAnswer);
   const result = [question, rightAnswer];
   return result;
 };
