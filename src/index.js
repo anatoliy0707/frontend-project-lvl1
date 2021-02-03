@@ -16,6 +16,7 @@ const gameLogic = (task, questionAndAnswer) => {
 
     if (userAnswer === rightAnswer) {
       console.log('Correct!');
+
       if (i === gameRound) {
         console.log(`Congratulations, ${userName}!`);
       }

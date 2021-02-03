@@ -18,6 +18,7 @@ const getProgression = () => {
 
 const progressionGameData = () => {
   const star = '..';
+
   const progression = getProgression();
   const radnomIndex = getRandomInRange(1, progression.length - 1);
   const rightAnswer = String(progression[radnomIndex]);
