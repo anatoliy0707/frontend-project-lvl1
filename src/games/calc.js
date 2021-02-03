@@ -17,11 +17,11 @@ const getExpression = (operandOne, operandTwo, operator) => {
 };
 
 const calcGameData = () => {
-  const num1 = getRandomInRange(1, 100);
-  const num2 = getRandomInRange(1, 100);
+  const operandOne = getRandomInRange(1, 100);
+  const operandTwo = getRandomInRange(1, 100);
   const operator = getRandomOperator();
-  const question = `${num1} ${operator} ${num2}`;
-  const rightAnswer = String(getExpression(num1, num2, operator));
+  const question = `${operandOne} ${operator} ${operandTwo}`;
+  const rightAnswer = String(getExpression(operandOne, operandTwo, operator));
   const result = [question, rightAnswer];
   return result;
 };
