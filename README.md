@@ -6,6 +6,44 @@
 
 [![Linter check](https://github.com/anatoliy0707/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/anatoliy0707/frontend-project-lvl1/workflows/hexlet-check/badge.svg)
 
+## Setup
+
+```
+npm install
+```
+
+## Run games
+
+**Say if the number is even**
+
+```
+make brain-even
+```
+
+**Calculate the expression**
+
+```
+make brain-calc
+```
+
+**Find the greatest common divisor of the numbers**
+
+```
+make brain-gcd
+```
+
+**Find the missing number of the progression**
+
+```
+make brain-progression
+```
+
+**Say if the number is prime**
+
+```
+make brain-prime
+```
+
 ## Watch asciinemas
 
 [![asciicast](https://asciinema.org/a/8FLza4pcM0UVHSRyN1AOp04nt.svg)](https://asciinema.org/a/8FLza4pcM0UVHSRyN1AOp04nt)
