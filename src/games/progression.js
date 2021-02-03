@@ -1,5 +1,5 @@
-import getRandomInRange from "../random-mechanism.js";
-import gameLogic from "../index.js";
+import getRandomInRange from '../random-mechanism.js';
+import gameLogic from '../index.js';
 
 const getProgression = () => {
   const startNum = getRandomInRange(1, 89);
@@ -17,7 +17,7 @@ const getProgression = () => {
 };
 
 const progressionGameData = () => {
-  const star = "..";
+  const star = '..';
   const question = getProgression();
   const radnomIndex = getRandomInRange(1, question.length - 1);
   const rightAnswer = String(question[radnomIndex]);
@@ -26,7 +26,7 @@ const progressionGameData = () => {
   return result;
 };
 
-const task = "What number is missing in the progression?";
+const task = 'What number is missing in the progression?';
 
 const buildAndRunProgression = () => gameLogic(task, progressionGameData);
 

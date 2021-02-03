@@ -1,5 +1,5 @@
-import getRandomInRange from "../random-mechanism.js";
-import gameLogic from "../index.js";
+import getRandomInRange from '../random-mechanism.js';
+import gameLogic from '../index.js';
 
 const nod = (n, m) => {
   if (m > 0) {
@@ -18,7 +18,7 @@ const gcdGameData = () => {
   return result;
 };
 
-const task = "Find the greatest common divisor of given numbers.";
+const task = 'Find the greatest common divisor of given numbers.';
 
 const buildAndRunGcd = () => gameLogic(task, gcdGameData);
 

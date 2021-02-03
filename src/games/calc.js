@@ -1,7 +1,8 @@
-import getRandomInRange from '../random-mechanism.js';
-import gameLogic from '../index.js';
+import getRandomInRange from "../random-mechanism.js";
+import gameLogic from "../index.js";
 
-const getRandomOperator = (coll = ['+', '-', '*']) => coll[Math.floor(Math.random() * coll.length)];
+const getRandomOperator = (coll = ["+", "-", "*"]) =>
+  coll[Math.floor(Math.random() * coll.length)];
 
 const calcGameData = () => {
   const num1 = getRandomInRange(1, 100);
@@ -13,7 +14,7 @@ const calcGameData = () => {
   return result;
 };
 
-const task = 'What is the result of the expression?';
+const task = "What is the result of the expression?";
 
 const buildAndRunCalc = () => gameLogic(task, calcGameData);
 
