@@ -3,11 +3,15 @@ import gameLogic from "../index.js";
 
 const getProgression = () => {
   const startNum = getRandomInRange(1, 89);
-  const result = [startNum];
+  const result = [];
   const progressionLength = getRandomInRange(5, 10);
   const progressionStep = getRandomInRange(1, 5);
-  for (let i = 0; i <= progressionLength; i += 1) {
-    result.push(result[i] + progressionStep);
+  for (
+    let i = 1, j = startNum;
+    i <= progressionLength;
+    i += 1, j += progressionStep
+  ) {
+    result.push([j]);
   }
   return result;
 };
