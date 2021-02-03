@@ -1,7 +1,7 @@
 import getRandomInRange from '../random-mechanism.js';
 import gameLogic from '../index.js';
 
-const parityCheck = (num) => {
+const isEven = (num) => {
   if (num % 2 === 0) {
     return 'yes';
   }
@@ -10,7 +10,7 @@ const parityCheck = (num) => {
 
 const evenGameData = () => {
   const question = getRandomInRange(1, 100);
-  const rightAnswer = parityCheck(question);
+  const rightAnswer = isEven(question);
   const result = [question, rightAnswer];
   return result;
 };

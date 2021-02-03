@@ -6,7 +6,9 @@ const gameLogic = (task, questionAndAnswer) => {
 
   console.log(task);
 
-  for (let i = 1; i <= 3; i += 1) {
+  const gameRound = 3;
+
+  for (let i = 1; i <= gameRound; i += 1) {
     const [question, rightAnswer] = questionAndAnswer();
     console.log(`Question: ${question}`);
 
@@ -14,7 +16,7 @@ const gameLogic = (task, questionAndAnswer) => {
 
     if (userAnswer === rightAnswer) {
       console.log('Correct!');
-      if (i === 3) {
+      if (i === gameRound) {
         console.log(`Congratulations, ${userName}!`);
       }
     } else {

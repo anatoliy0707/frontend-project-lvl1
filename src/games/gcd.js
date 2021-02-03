@@ -1,19 +1,19 @@
 import getRandomInRange from '../random-mechanism.js';
 import gameLogic from '../index.js';
 
-const nod = (n, m) => {
+const getNod = (n, m) => {
   if (m > 0) {
     const k = n % m;
-    return nod(m, k);
+    return getNod(m, k);
   }
   return n;
 };
 
 const gcdGameData = () => {
-  const num1 = getRandomInRange(1, 100);
-  const num2 = getRandomInRange(1, 100);
-  const question = `${num1} ${num2}`;
-  const rightAnswer = String(nod(num1, num2));
+  const ferstNum = getRandomInRange(1, 100);
+  const secondNum = getRandomInRange(1, 100);
+  const question = `${ferstNum} ${secondNum}`;
+  const rightAnswer = String(getNod(ferstNum, secondNum));
   const result = [question, rightAnswer];
   return result;
 };

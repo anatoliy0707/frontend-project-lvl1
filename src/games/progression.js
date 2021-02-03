@@ -11,17 +11,18 @@ const getProgression = () => {
     i <= progressionLength;
     i += 1, j += progressionStep
   ) {
-    result.push([j]);
+    result.push(j);
   }
   return result;
 };
 
 const progressionGameData = () => {
   const star = '..';
-  const question = getProgression();
-  const radnomIndex = getRandomInRange(1, question.length - 1);
-  const rightAnswer = String(question[radnomIndex]);
-  question[radnomIndex] = star;
+  const progression = getProgression();
+  const radnomIndex = getRandomInRange(1, progression.length - 1);
+  const rightAnswer = String(progression[radnomIndex]);
+  progression[radnomIndex] = star;
+  const question = progression.join(' ');
   const result = [question, rightAnswer];
   return result;
 };
