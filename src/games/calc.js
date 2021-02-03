@@ -1,16 +1,15 @@
-import getRandomInRange from "../random-mechanism.js";
-import gameLogic from "../index.js";
+import getRandomInRange from '../random-mechanism.js';
+import gameLogic from '../index.js';
 
-const getRandomOperator = (coll = ["+", "-", "*"]) =>
-  coll[Math.floor(Math.random() * coll.length)];
+const getRandomOperator = (coll = ['+', '-', '*']) => coll[Math.floor(Math.random() * coll.length)];
 
 const getExpression = (operandOne, operandTwo, operator) => {
   switch (operator) {
-    case "+":
+    case '+':
       return operandOne + operandTwo;
-    case "-":
+    case '-':
       return operandOne - operandTwo;
-    case "*":
+    case '*':
       return operandOne * operandTwo;
     default:
       return false;
@@ -27,7 +26,7 @@ const calcGameData = () => {
   return result;
 };
 
-const task = "What is the result of the expression?";
+const task = 'What is the result of the expression?';
 
 const buildAndRunCalc = () => gameLogic(task, calcGameData);
 
